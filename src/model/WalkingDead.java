@@ -28,8 +28,28 @@ public void IonBlaster() {
 }
 
 @Override
-public void philanthropist() {
-	// TODO Auto-generated method stub
-	
+public int philanthropist() {
+	int b = 12;
+	return b;
+}
+public int compareTo(Object compared)
+{
+	int comparedValue = Integer.MIN_VALUE;
+	if(compared instanceof IronMan)
+	{
+		if(this.philanthropist() > ((IronMan)compared).philanthropist())
+		{
+			comparedValue = 1;
+		}
+		else if(this.philanthropist() < ((IronMan)compared).philanthropist())
+		{
+			comparedValue = -1;
+		}
+		else 
+		{
+			comparedValue = 0;
+		}
+	}
+	return comparedValue;
 }
 }

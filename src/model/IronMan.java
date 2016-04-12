@@ -8,5 +8,5 @@ public interface IronMan
 
 	public void IonBlaster();
 
-	public void philanthropist();
+	public int philanthropist();
 }

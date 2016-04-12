@@ -1,6 +1,6 @@
 package model;
 
-public abstract class tvshowsAndMovies implements IronMan
+public abstract class tvshowsAndMovies implements IronMan, Comparable
 {
 private String showName;
 private String genre;
@@ -34,6 +34,11 @@ public void setGenre(String genre)
 public void setSeasons(int seasons) 
 {
 	this.seasons = seasons;
+}
+public String toString()
+{
+	String description ="This a " +this.getClass();
+	return description;
 }
 
 }
