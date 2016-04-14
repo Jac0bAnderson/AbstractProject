@@ -32,11 +32,7 @@ public class BreakingBad extends tvshowsAndMovies
 		int a =12;
 		return a;
 	}
-	public String toString()
-	{
-		String description ="This a " +this.getClass();
-		return description;
-	}
+	
 	/**
 	 * If the supplied variable compared names before the calling variable
 	 * return -1.
