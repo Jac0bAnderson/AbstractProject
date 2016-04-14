@@ -9,4 +9,5 @@ public interface IronMan
 	public void IonBlaster();
 
 	public int philanthropist();
+	public int compareTo(Object thing);
 }

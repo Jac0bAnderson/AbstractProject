@@ -26,19 +26,22 @@ public class Panel extends JPanel
 	String [] nameCol = {"Show Name", "Genre", "Seasons"};
 	Object [] [] info ={
 			{"Breaking Bad", "Crime Film", "5"},
-			{"The Walking Dead", "Action", "7"}
+			{"The Walking Dead", "Action", "7"},
+			{"Iron Man 3", "Action", "0"}
 			};
 	arrayScroll = new JScrollPane();
+	
 	
 	arrayTable = new JTable(info, nameCol);
 	arrayScroll.setViewportView(arrayTable);
 
-	arrayTable.setPreferredScrollableViewportSize(new Dimension(10,10));
+	arrayTable.setPreferredScrollableViewportSize(new Dimension(5,5));
 	arrayTable.setFillsViewportHeight(true);
 	
 
 	setupPanel();
 	setupLayout();
+	setupListeners();
 	
 
 	}
@@ -51,11 +54,14 @@ public class Panel extends JPanel
 	}
 	private void setupLayout()
 	{
-		baseLayout.putConstraint(SpringLayout.NORTH, arrayScroll, 54, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.WEST, arrayScroll, 27, SpringLayout.WEST, this);
-		baseLayout.putConstraint(SpringLayout.SOUTH, arrayScroll, -33, SpringLayout.SOUTH, this);
-		baseLayout.putConstraint(SpringLayout.EAST, arrayScroll, 280, SpringLayout.WEST, this);
-
+		baseLayout.putConstraint(SpringLayout.NORTH, arrayScroll, 0, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, arrayScroll, 0, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, arrayScroll, -236, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, arrayScroll, 253, SpringLayout.WEST, this);
 	}
 
+	private void setupListeners()
+	{
+		
+	}
 }

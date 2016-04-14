@@ -33,26 +33,8 @@ public class IronMan3 extends tvshowsAndMovies
 		return c;
 		
 	}
-	public int compareTo(Object compared)
-	{
-		int comparedValue = Integer.MIN_VALUE;
-		if(compared instanceof IronMan)
-		{
-			if(this.philanthropist() > ((IronMan)compared).philanthropist())
-			{
-				comparedValue = 1;
-			}
-			else if(this.philanthropist() < ((IronMan)compared).philanthropist())
-			{
-				comparedValue = -1;
-			}
-			else 
-			{
-				comparedValue = 0;
-			}
-		}
-		return comparedValue;
-	}
+	
+	
 
 
 
