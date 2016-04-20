@@ -32,6 +32,12 @@ public class BreakingBad extends tvshowsAndMovies
 		int a =12;
 		return a;
 	}
+
+	@Override
+	public double levels() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	/**
 	 * If the supplied variable compared names before the calling variable

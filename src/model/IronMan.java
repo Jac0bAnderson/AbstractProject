@@ -10,4 +10,5 @@ public interface IronMan
 
 	public int philanthropist();
 	public int compareTo(Object thing);
+	public double levels();
 }

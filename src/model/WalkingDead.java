@@ -33,4 +33,10 @@ public int philanthropist() {
 	return b;
 }
 
+@Override
+public double levels() {
+	// TODO Auto-generated method stub
+	return 0;
+}
+
 }

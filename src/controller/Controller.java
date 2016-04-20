@@ -13,6 +13,8 @@ public class Controller
 	 public Controller()
 	 {
 		 baseFrame = new Frame(this);
+		 this.IronDude = new ArrayList<IronMan>();
+		 makeIronList();
 	 }
 	 private void makeIronList()
 	 {
@@ -20,6 +22,19 @@ public class Controller
 		 IronDude.add(new WalkingDead());
 		 IronDude.add(new IronMan3());
 	 }
+	 
+	  public String showLevels()
+	 {
+		 String levels = "";
+		 for(IronMan currentLevel : IronDude)
+		 {
+			 levels.concat("this is the " +currentLevel.toString() + " and has a level  " + currentLevel.levels()+ "\n" );
+		 }
+		 return levels;
+	 }
+	 
+	 
+	 
 	 public void swap(int firstlocation, int secondLocation)
 	 {
 		 IronMan temp = IronDude.get(firstlocation);
@@ -66,4 +81,12 @@ public void start()
 {
 	
 }
+public ArrayList<IronMan> getIronDude() {
+	return IronDude;
+}
+public void setIronDude(ArrayList<IronMan> ironDude) {
+	IronDude = ironDude;
+}
+
+
 }
